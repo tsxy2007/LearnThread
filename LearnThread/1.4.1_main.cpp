@@ -1,7 +1,8 @@
 #include <iostream>
 #include <thread>
-
-#define _2_1_1
+#include "listing_2_4.h"
+#include "thread_3_1.h"
+//#define _2_1_1
 
 //1. Normal
 void Hello()
@@ -63,4 +64,13 @@ int main()
 	oops();
 	
 #endif
+
+	thread_2_4::editor_document("bar.doc");
+	using thread_2_4::X;
+	X my_x;
+	std::thread t(&X::do_lenghty_work, &my_x);
+	t.join();
+
+	THREAD_3_1_::add_to_list(42);
+	std::cout << "contains(1)=" << THREAD_3_1_::list_contains(1) << ", contains(42) = " << THREAD_3_1_::list_contains(42) << std::endl;
 }

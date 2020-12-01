@@ -18,5 +18,16 @@
     <ClCompile Include="1.4.1_main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="thread_3_1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="listing_2_4.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="thread_3_1.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
