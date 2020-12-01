@@ -1,7 +1,7 @@
 #include <iostream>
 #include <thread>
-
-#define _2_1_1
+#include "listing_2_4.h"
+//#define _2_1_1
 
 //1. Normal
 void Hello()
@@ -63,4 +63,10 @@ int main()
 	oops();
 	
 #endif
+
+	thread_2_4::editor_document("bar.doc");
+	using thread_2_4::X;
+	X my_x;
+	std::thread t(&X::do_lenghty_work, &my_x);
+	t.join();
 }
