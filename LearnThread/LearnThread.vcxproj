@@ -150,6 +150,9 @@
     <ClInclude Include="listing_2_4.h" />
     <ClInclude Include="thread_3_1.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="listing_2_4.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
